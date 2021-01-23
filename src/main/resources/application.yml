@@ -1,0 +1,12 @@
+server:
+  port: 7009
+spring:
+  application:
+    name: minio
+minio:
+  #minio服务器地址
+  endpoint: http://127.0.0.1:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+  #对外域名，非必需
+  minioHost: ${minio.endpoint}
